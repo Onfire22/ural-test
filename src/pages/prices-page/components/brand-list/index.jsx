@@ -42,7 +42,7 @@ const BrandsList = () => {
 	}
 
 	return (
-		<div className="list-group">
+		<div className="list-group overflow-auto" style={{ maxHeight: 300 }}>
 			{brands.map(brand => (
 				<button
 					key={brand.value}
